@@ -45,7 +45,7 @@
               action="lista_tareas.action_window"/>
     <menuitem name="Ajustes" id="lista_tareas.menu_2_list" parent="lista_tareas.menu_1"
               action="lista_tareas.action_window"/>
-    <menuitem name="Prueba" id="lista_tareas.menu_2_list" parent="lista_tareas.menu_2"
+    <menuitem name="Prueba" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_2"
               action="lista_tareas.action_window"/>
 
   </data>
