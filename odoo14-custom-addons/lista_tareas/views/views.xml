@@ -35,7 +35,7 @@
     <menuitem name="Listado de tareas" id="lista_tareas.menu_root"/>
 
     <!-- menu categories -->
-    <menuitem name="Tareas Importantes" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
+    <menuitem name="Tareas Importantes" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
     <menuitem name="Opciones Lista Tareas" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
     
 
