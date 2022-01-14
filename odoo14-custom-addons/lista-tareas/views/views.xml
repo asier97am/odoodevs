@@ -1,0 +1,56 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="lista-tareas.list">
+      <field name="name">lista-tareas list</field>
+      <field name="model">lista-tareas.lista-tareas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="Tarea"/>
+          <field name="Prioridad"/>
+          <field name="Urgente"/>
+          <field name="Realizada"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="lista-tareas.action_window">
+      <field name="name">Listado de tareas pendientes/field>
+      <field name="res_model">lista-tareas.lista-tareas</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="lista-tareas.action_server">
+      <field name="name">lista-tareas server</field>
+      <field name="model_id" ref="model_lista-tareas_lista-tareas"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Listado de Tareas" id="lista-tareas.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Opciones Lista Tareas" id="lista-tareas.menu_1" parent="lista-tareas.menu_root"/>
+        <!-- actions -->
+
+    <menuitem name="Mostrar Lista" id="lista-tareas.menu_1_list" parent="lista-tareas.menu_1"
+              action="lista-tareas.action_window"/>
+  </data>
+</odoo>
