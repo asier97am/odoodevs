@@ -11,7 +11,6 @@
           <field name="tarea"/>
           <field name="prioridad"/>
           <field name="urgente"/>
-          <field name="estado"/>
           <field name="realizada"/>
         </tree>
       </field>
