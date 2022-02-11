@@ -38,6 +38,7 @@
     <menuitem name="Tareas Importantes" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
     <menuitem name="Opciones Lista Tareas" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
     
+    
 
     <!-- actions -->
 
@@ -48,5 +49,11 @@
     <menuitem name="Prueba" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_2"
               action="lista_tareas.action_window"/>
 
+    
+
+    <!-- new menu entries-->
+    <menuitem name="Comunidad" id="lista_tareas.menu_3" parent="lista_tareas.menu_root"/>
+    <menuitem name="Local" id="lista_tareas.menu_4_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
+    <menuitem name="Global" id="lista_tareas.menu_5_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
   </data>
 </odoo>

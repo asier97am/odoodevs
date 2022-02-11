@@ -24,8 +24,8 @@ class lista_tareas(models.Model):
     def _value_urgente(self):
         #Para cada registro
         for record in self:
-            #Si la prioridad es mayor que 10, se considera urgente, en otro caso no lo es
-            if record.prioridad>10:
+            #Si la prioridad es mayor que 7, se considera urgente, en otro caso no lo es
+            if record.prioridad>7:
                 record.urgente = True
             else:
                 record.urgente = False
